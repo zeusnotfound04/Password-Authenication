@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/login.css">
     <title>Login</title>
+    <link rel="stylesheet" href="/login.css">
+    <style>
+     
+    </style>
 </head>
 <body>
 
-    <div class="wrapper">
+    <div class="login-container">
         <div class="logo">
-            <img src="https://i.pinimg.com/564x/28/09/8f/28098f43f6a6a558a3551d5fed597c6c.jpg" alt="zeherrrr">
+            <img src="https://i.pinimg.com/564x/28/09/8f/28098f43f6a6a558a3551d5fed597c6c.jpg" alt="zeherrrr" />
         </div>
+
         <div id="admin-txt" class="text-center mt-4 name">
             Admin Panel
         </div>
-        <form class="p-3 mt-3">
-            <div class="form-field d-flex align-items-center">
-                <span class="far fa-user"></span>
-                <input type="text" name="userName" id="userName" placeholder="Username or Email">
+
+        <form action="/login" method="POST" class="login-form p-3 mt-3">
+            <div class="form-field">
+                <input type="text" name="username" id="userName" placeholder="Username or Email" required />
             </div>
-            <div class="form-field d-flex align-items-center">
-                <span class="fas fa-key"></span>
-                <input type="password" name="password" id="pwd" placeholder="Password">
+            <div class="form-field">
+                <input type="password" name="password" id="pwd" placeholder="Password" required />
             </div>
-            <button class="btn mt-3">Login</button>
+            <button class="btn">Login</button>
         </form>
-        <div class="text-center">
-            <a href="/register">Forget password?</a><div id="x23">or</div><a href="#">Sign up</a>
-            <a href="/"></a>
+
+        <div class="footer-links text-center">
+            <a href="/register">Forgot password?</a>
+            <div id="or-text">or</div>
+            <a href="/register">Sign up</a>
         </div>
     </div>
+
 </body>
 </html>

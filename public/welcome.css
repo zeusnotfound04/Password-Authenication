@@ -1,43 +1,82 @@
-*{
+ /* Basic Reset */
+ * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins' , sans-serif ;
     box-sizing: border-box;
 }
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(0, 0, 0);
-    padding: 10px;
+/* Body */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.box{
-    width: 100%;
-    max-width: 540px;
-    background: #3c3c3c;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
-    border-radius: 10px;
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
 }
-.box h1{
-    color: white;
-    font-weight: bold;
-    font-size: 40px;
+
+/* Box */
+.box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 30px;
-}
-        
-        
-        
-        
-.btn {
-    box-shadow: none;
     width: 100%;
-    height: 40px;
-    background-color: #03A9F4;
-    color: #fff;
-    border-radius: 25px;
-    box-shadow: none;
-    letter-spacing: 1.3px;
+    max-width: 400px;
+}
+
+/* Heading */
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
     margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 200px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }

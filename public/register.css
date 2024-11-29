@@ -1,115 +1,98 @@
-        /* Importing fonts from Google */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+  /* Basic Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Reseting */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        body {
-            background: #000000;
-        }
-        
-        .wrapper {
-            max-width: 350px;
-            min-height: 500px;
-            margin: 80px auto;
-            padding: 40px 30px 30px 30px;
-            background-color: #252525;
-            border-radius: 15px;
-        }
-        
-        .logo {
-            width: 80px;
-            margin: auto;
-        }
-        
-        .logo img {
-            width: 100%;
-            height: 80px;
-            object-fit:  contain;;
-            border-radius: 50%;
-          
-        }
-        
-        .wrapper .name {
-            font-weight: 600;
-            font-size: 1.4rem;
-            letter-spacing: 1.3px;
-            padding-left: 10px;
-            color: #555;
-        }
-        #joinUs{
-            text-align: center;
-            padding-bottom: 30px;
-            color: #fff;
-        }
-        
-        .wrapper .form-field input {
-            width: 100%;
-            display: block;
-            border: none;
-            outline: none;
-            background: none;
-            font-size: 1.2rem;
-            color: #ffffff;
-            padding: 10px 15px 10px 10px;
-            border-radius: 25px;
-            border: solid rgb(104, 102, 102);
-            /* border: 1px solid red; */
-        }
-        
-        .wrapper .form-field {
-            padding-left: 10px;
-            margin-bottom: 20px;
-            border-radius: 20px;
-        }
-        
-        .wrapper .form-field .fas {
-            color: #000000;
-        }
-        
-        .wrapper .btn {
-            box-shadow: none;
-            width: 100%;
-            height: 40px;
-            background-color: #03A9F4;
-            color: #fff;
-            border-radius: 25px;
-            box-shadow: none;
-            letter-spacing: 1.3px;
-        }
-        
-        .wrapper .btn:hover {
-            background-color: #e50303;
-        }
-        
-        .wrapper a {
-            text-decoration: none;
-            font-size: 0.8rem;
-            color: #03A9F4;
-        }
-        
-        .wrapper a:hover {
-            color: #039BE5;
-        }
-        .text-center{
-            padding-top: 10px;
-            text-align: center;
-        }
-        #admin-txt{
-            padding-bottom: 5px;
-        }
-        #x23{
-            color: #fff;
-        }
-        
-        @media(max-width: 380px) {
-            .wrapper {
-                margin: 30px 20px;
-                padding: 40px 15px 15px 15px;
-            }
-        }
+/* Body */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Register Container */
+.wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Join Us Title */
+#joinUs h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-field {
+    margin: 15px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button */
+button.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Links */
+.footer-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+#x23 {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    #joinUs h1 {
+        font-size: 20px;
+    }
+}

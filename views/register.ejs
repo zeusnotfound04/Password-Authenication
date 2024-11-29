@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="/register.css">
 </head>
 <body>
+
     <div class="wrapper">
         <div id="joinUs">
-            <h1>
-                Join us
-            </h1>
+            <h1>Join Us</h1>
         </div>
-        <form class="p-3 mt-3">
-            <div class="form-field d-flex align-items-center">
-                <span class="far fa-user"></span>
-                <input type="text" name="fullname" id="fullName" placeholder="Full Name">
+
+        <form action="/register" method="POST" class="register-form p-3 mt-3">
+            <div class="form-field">
+                <input type="text" name="fullname" id="fullName" placeholder="Full Name" required />
             </div>
-            <div class="form-field d-flex align-items-center">
-                <span class="far fa-user"></span>
-                <input type="text" name="email" id="email" placeholder="Username or Email">
+            <div class="form-field">
+                <input type="text" name="email" id="email" placeholder="Username or Email" required />
             </div>
-            <div class="form-field d-flex align-items-center">
-                <span class="fas fa-key"></span>
-                <input type="password" name="password" id="pwd" placeholder="Password">
+            <div class="form-field">
+                <input type="password" name="password" id="pwd" placeholder="Password" required />
             </div>
-            <button class="btn mt-3">Join now</button>
+            <button class="btn mt-3">Join Now</button>
         </form>
-        <div class="text-center">
-            <a href="register.ejs">Forget password?</a><div id="x23">or</div><a href="#">Sign up</a>
-            <a href="/"></a>
+
+        <div class="footer-links text-center">
+            <a href="/login">Already have an account? Login</a>
         </div>
     </div>
+
 </body>
 </html>

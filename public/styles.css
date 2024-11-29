@@ -1,0 +1,123 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for all content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+/* Styling for headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the paragraph under the heading */
+p.lead {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Buttons */
+button, .btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Logout Button */
+a.btn-secondary {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #6c757d;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Links for actions */
+.text-center a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+#x23 {
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+/* For the box that contains the welcome message */
+.box {
+    text-align: center;
+    padding: 30px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* The button container */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    width: 150px;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Custom container for Welcome Page */
+#joinUs {
+    margin-bottom: 30px;
+}
+
+#joinUs h1 {
+    font-size: 3em;
+    color: #333;
+}
